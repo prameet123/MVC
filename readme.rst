@@ -68,3 +68,11 @@ Acknowledgement
 
 The CodeIgniter team would like to thank EllisLab, all the
 contributors to the CodeIgniter project and you, the CodeIgniter user.
+********************************************************
+Registration Form
+*******************************************************
+base url/Student/form
+********************************************************
+Student Form
+*******************************************************
+base url/Student/list
