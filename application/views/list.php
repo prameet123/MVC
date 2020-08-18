@@ -18,7 +18,7 @@
     </div>
     <div class="container" style="margin-top: 50;">
 
-        <form enctype="multipart/form-data" method="post" action="<?php echo site_url('Student/list'); ?>" role="form">
+        <form enctype="multipart/form-data" method="post" action="<?php echo site_url('Student/lists'); ?>" role="form">
             <div class="table-responsive">
 
                 <div class="form-row">
@@ -53,13 +53,13 @@
                     <div class="col-sm-2">
                         <label for="course">Gender</label>
                         <div class="form-check">
-                            <input class="form-check-input" type="radio" name="gender" value='male' checked>
+                            <input class="form-check-input" type="radio" name="gender" value="male" <?php echo set_radio('gender', 'male', TRUE); ?> checked>
                             <label class="form-check-label" for="gender">
                                 Male
                             </label>
                         </div>
                         <div class="form-check">
-                            <input class="form-check-input" type="radio" name="gender" value="female">
+                            <input class="form-check-input" type="radio" name="gender" value="female" <?php echo set_radio('gender', 'female'); ?>>
                             <label class="form-check-label" for="gender">
                                 Female
                             </label>

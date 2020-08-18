@@ -16,7 +16,7 @@ class Student extends CI_Controller
     {
         $this->load->library('pagination');
         $config = [
-            'base_url' => base_url('Student/list'),
+            'base_url' => base_url('Student/lists'),
             'per_page' => 4,
             'total_rows' => $this->Test_model->total_rows(),
             'full_tag_open' => "<ul class='pagination'>",
@@ -80,7 +80,7 @@ class Student extends CI_Controller
                 'state' => $this->input->post('state', true),
             );
             $this->Test_model->insert($data);
-            redirect(site_url('Student/list'));
+            redirect(site_url('Student/lists'));
         }
     }
 
