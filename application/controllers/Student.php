@@ -12,7 +12,7 @@ class Student extends CI_Controller
         $this->load->model('Test_model');
         $this->load->library('session');
     }
-    public function list($number = 0)
+    public function lists($number = 0)
     {
         $this->load->library('pagination');
         $config = [
